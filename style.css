@@ -1,0 +1,345 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    line-height: 1.6; /* Improved text spacing */
+}
+
+/* Header Styles */
+header nav {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Increased gap between menu items */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px; /* Added padding around menu items */
+}
+
+header nav ul li a:hover {
+    color: #555;
+    background-color: #f0f0f0; /* Added hover effect */
+}
+
+header .logo {
+    max-width: 100px;
+    margin-right: 20px; /* Added spacing from logo to menu */
+}
+
+.btn {
+    padding: 12px 25px; /* Increased padding for better button size */
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-left: 20px; /* Added spacing from other elements */
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: translateY(-2px); /* Added subtle hover animation */
+}
+
+/* Hero Section */
+.bg {
+    height: 500px; /* Increased height for better visibility */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image/business\ logo.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; /* Added spacing below hero section */
+}
+
+#bg1 {
+    color: white;
+    font-size: 64px; /* Increased font size */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 20px; /* Added padding around text */
+}
+
+/* Card List Styles */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased min width */
+    gap: 40px; /* Increased gap between cards */
+    padding: 60px 20px; /* Increased padding */
+    margin-bottom: 40px; /* Added spacing below section */
+}
+
+.card-item {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    background-color: white; /* Added background color */
+    border-radius: 10px;
+    padding: 20px; /* Added padding inside card */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Added subtle shadow */
+}
+
+.card-item:hover {
+    transform: translateY(-15px); /* Increased hover effect */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card-item img {
+    width: 100%;
+    height: 300px; /* Increased image height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Added spacing below image */
+}
+
+.developer, .Furniture, .Best seller {
+    display: inline-block;
+    padding: 8px 15px; /* Increased padding */
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Added spacing below label */
+    font-size: 14px; /* Adjusted font size */
+}
+
+.card-item h3 {
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 15px; /* Added spacing below heading */
+    color: #333;
+}
+
+.arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px; /* Increased spacing */
+}
+
+.card-icon {
+    color: #333;
+    font-size: 24px; /* Increased icon size */
+}
+
+/* Product Section */
+.container1 {
+    display: flex;
+    gap: 50px; /* Increased gap between columns */
+    padding: 60px 20px; /* Increased padding */
+    background-color: white;
+    margin-bottom: 40px; /* Added spacing below section */
+}
+
+.information {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 500px; /* Increased image height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Added subtle shadow */
+}
+
+/* Product List */
+.container2 {
+    padding: 60px 20px; /* Increased padding */
+    background-color: #f9f9f9;
+    margin-bottom: 40px; /* Added spacing below section */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px; /* Increased gap between products */
+    margin-top: 30px; /* Added spacing above product list */
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px; /* Increased padding */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased gap between columns */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Added subtle shadow */
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: 300px; /* Increased image height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Added subtle shadow */
+}
+
+.features ul {
+    list-style: none;
+    padding-left: 25px; /* Increased padding for list items */
+}
+
+.button {
+    padding: 12px 30px; /* Increased padding */
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 15px; /* Added spacing above button */
+}
+
+.button:hover {
+    background-color: #555;
+    transform: translateY(-2px); /* Added subtle hover animation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card-list {
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-card {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #bg1 {
+        font-size: 48px; /* Adjusted font size for mobile */
+    }
+
+    .image-container img {
+        height: 400px; /* Adjusted image height for mobile */
+    }
+}
+/* Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: white;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #f0f0f0;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #555;
+}
+
+.copyright {
+    color: #f0f0f0;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-section {
+        margin-bottom: 30px;
+    }
+    
+    .footer-bottom {
+        padding-top: 20px;
+    }
+}
